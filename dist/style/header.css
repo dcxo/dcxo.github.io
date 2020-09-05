@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 5vmin;
+  font-weight: normal;
+  height: 100vh;
+  width: max-content;
+  margin: 0 auto;
+}
+header h1, header p {
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: left;
+  width: 100%;
+}
+header span.job {
+  background-color: #f7b42c;
+  color: #1e1e22;
+  margin: 0 0.25ch;
+  padding: 0 0.25ch;
+  border-radius: 2px;
+}

@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body, html {
+  background-color: #1e1e22;
+  color: #e1e1dd;
+}

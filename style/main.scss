@@ -1,0 +1,19 @@
+$primary_color: #f7b42c;
+$secondary_color: #000;
+$accent_color: #fff;
+
+$black_color: #1e1e22;
+$white_color: #e1e1dd;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body, html {
+	background-color: $black_color;
+	color: $white_color;
+}
+
+
