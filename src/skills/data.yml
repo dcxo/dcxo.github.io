@@ -1,0 +1,60 @@
+- title: Programming Languages
+  skills:
+
+  - id: rust
+    favorite: true
+
+  - id: python
+    offset: -2
+
+  - id: go
+    offset: 6
+    favorite: true
+
+  - id: java
+
+  - id: php
+    name: PHP
+    offset: 4
+
+  - id: typescript
+
+  - id: kotlin
+
+  - id: dart
+
+  - id: javascript
+
+- title: Frameworks and SDK
+  skills:
+
+  - id: android
+    offset: 2
+
+  - id: express
+
+  - id: react
+
+  - id: django
+
+  - id: svelte
+
+  - id: symphony
+
+  - id: flutter
+
+- title: Other tools
+  skills:
+
+  - id: git
+
+  - id: docker
+
+  - id: apache
+
+  - id: nginx
+
+  - id: linux
+
+  - id: githubactions
+    name: Github Actions
