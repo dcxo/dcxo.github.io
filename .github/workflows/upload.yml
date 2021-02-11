@@ -31,5 +31,6 @@ jobs:
           build_dir: public
           committer: David Castilla Ortiz <im@dcxo.dev>
           author: David Castilla Ortiz <im@dcxo.dev>
+          fqdn: dcxo.dev
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
