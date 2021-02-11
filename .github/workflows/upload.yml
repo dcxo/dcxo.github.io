@@ -20,7 +20,7 @@ jobs:
           echo Installing dependencies
           npm ci
           echo Building app
-          npm build
+          npm run build
           echo App builded correctly
 
       -
