@@ -8,13 +8,12 @@ on:
       - main
 
 jobs:
-  # This workflow contains a single job called "build"
   upload:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Build svelte
         run: |
           echo Installing dependencies
@@ -22,10 +21,12 @@ jobs:
           echo Building app
           npm build
           echo App builded correctly
-        
+
       - name: Upload to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.2.0
         with:
           build_dir: /
           committer: David Castilla Ortiz <im@dcxo.dev>
           author: David Castilla Ortiz <im@dcxo.dev>
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
