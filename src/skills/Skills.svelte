@@ -14,7 +14,9 @@
                 <h1>{title}</h1>
             </header>
             <ul>
-                {#each skills.sort((el1, el2) => el2.favorite - el1.favorite) as skill}
+                {#each skills.sort(({ fav: x }, { fav: y }) =>
+                    x === y ? 0 : x ? -1 : 1
+                ) as skill}
                     <li class="skill">
                         <Skill {...skill} />
                     </li>
@@ -30,10 +32,6 @@
         background-color: var(--primary-color);
         padding: 24px;
 
-        > header {
-            font-size: 1.5rem;
-        }
-
         section {
             ul {
                 display: grid;
@@ -44,7 +42,7 @@
             header {
                 flex: 1 0 100%;
                 font-size: 1.25rem;
-                padding: 16px;
+                padding: 16px 0 8px 0;
             }
         }
     }

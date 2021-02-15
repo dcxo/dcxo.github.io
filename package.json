@@ -11,8 +11,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-yaml": "^3.0.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-svelte": "^4.0.6",
+    "postcss": "^8.2.6",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -21,9 +20,10 @@
     "sass": "^1.32.6",
     "sirv-cli": "^1.0.11",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^4.6.6"
+    "svelte-preprocess": "^4.6.6",
+    "svelte-material-icons": "^1.0.3"
   },
-  "browserlist": [
-    "> 5%"
+  "browserslist": [
+    "> 0%"
   ]
 }

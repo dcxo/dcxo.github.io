@@ -2,14 +2,14 @@
   skills:
 
   - id: rust
-    favorite: true
+    fav: true
 
   - id: python
     offset: -2
 
   - id: go
     offset: 6
-    favorite: true
+    fav: true
 
   - id: java
 

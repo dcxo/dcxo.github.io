@@ -1,5 +1,6 @@
 <script charset="utf-8">
     import Header from "./header/Header.svelte";
+    import Projects from "./projects/Projects.svelte";
     import Skills from "./skills/Skills.svelte";
 </script>
 
@@ -8,9 +9,10 @@
 <Header />
 <main>
     <Skills />
+    <Projects />
 </main>
 
-<style lang="scss" global>
+<style global>
     :root {
         --primary-color: #f7b42c;
         --secondary-color: #bc75fa;
@@ -34,5 +36,12 @@
     body {
         display: flex;
         flex-direction: column;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+    main * * * h1 {
+        font-size: 1.5rem;
     }
 </style>

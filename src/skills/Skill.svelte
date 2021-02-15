@@ -4,7 +4,7 @@
     export let id;
     export let name = idToName(id);
     export let offset = 0;
-    export let favorite = false;
+    export let fav = false;
 </script>
 
 <div class={$$props.class} style="--offset: {offset}px">
@@ -13,7 +13,7 @@
         alt={name}
     />
 
-    {#if favorite}
+    {#if fav}
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -35,12 +35,13 @@
         position: relative;
         padding: calc(24px - var(--offset));
         border-radius: 8px;
-        box-shadow: 0px 4px 8px 0px rgba(black, 0.2);
         transition: box-shadow 440ms ease-in-out;
         z-index: 0;
 
+        @include box_shadow(2);
+
         &:hover {
-            box-shadow: 0px 6px 12px 0px rgba(black, 0.3);
+            @include box_shadow(3);
         }
 
         svg {

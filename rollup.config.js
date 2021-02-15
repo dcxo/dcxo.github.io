@@ -45,10 +45,9 @@ export default {
             compilerOptions: {
                 dev: !production
             },
-            include: "src/**/*.svelte",
             preprocess: sveltePreprocess({
                 scss: {
-                    prependData: `@import '${join(cwd(), 'src/global.scss')}';`
+                    prependData: `@import 'src/global.scss';`
                 }
             })
         }),

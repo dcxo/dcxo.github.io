@@ -1,39 +1,11 @@
 <script>
     import QuickConnect from "./QuickConnect.svelte";
-    import { tick } from "svelte";
-
-    let words = ["autodidact", "communicative", "a backend dev", "a web dev"];
-    let currentWord = 0;
-    let isGrowing = false;
-    let title = words[currentWord];
-
-    async function updateTitle() {
-        if (!isGrowing && currentWord != words.length - 1) {
-            title = title.slice(0, -1);
-            if (
-                title === "" ||
-                title === words[currentWord + 1].slice(0, title.length)
-            ) {
-                currentWord++;
-                isGrowing = true;
-            }
-        } else {
-            title = words[currentWord].slice(0, title.length + 1);
-            if (title === words[currentWord]) {
-                isGrowing = false;
-            }
-        }
-
-        if (currentWord != words.length)
-            tick().then((_) => setTimeout(updateTitle, 150));
-    }
-
-    tick().then((_) => setTimeout(updateTitle, 800));
+    import Typewriter from "./Typewriter.svelte";
 </script>
 
 <header>
     <h1>Hi! I'm <span>David</span></h1>
-    <h2>I'm {title}</h2>
+    <h2>I'm <Typewriter words={["autodidact", "communicative", "a backend dev", "a web dev"]} /></h2>
     <QuickConnect class="qc" />
 </header>
 
