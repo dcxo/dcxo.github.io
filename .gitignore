@@ -5,3 +5,6 @@
 .cache
 
 src/icons
+
+public/main.js
+public/main.css
