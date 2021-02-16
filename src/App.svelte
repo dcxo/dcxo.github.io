@@ -4,7 +4,10 @@
     import Skills from "./skills/Skills.svelte";
 </script>
 
-<svelte:head />
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</svelte:head>
 
 <Header />
 <main>
@@ -13,7 +16,6 @@
 </main>
 
 <style lang="scss" global>
-
     :root {
         --primary-color: #{$primaryColor};
         --secondary-color: #{$secondaryColor};

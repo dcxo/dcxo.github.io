@@ -56,7 +56,7 @@ module.exports = {
             title: `David's Portfolio`,
             hash: true,
             favicon: 'favicon.png',
-            template: 'src/index.html'
+            // template: 'src/index.html'
         }),
     ],
     optimization: {
