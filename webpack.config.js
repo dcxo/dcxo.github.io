@@ -1,4 +1,5 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { dirname, join } = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -50,7 +51,13 @@ module.exports = {
     },
     mode,
     plugins: [
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
+            title: `David's Portfolio`,
+            hash: true,
+            favicon: 'favicon.png',
+            template: 'src/index.html'
+        }),
     ],
     optimization: {
         minimize: prod,
