@@ -8,7 +8,7 @@
     offset: -2
 
   - id: go
-    offset: 6
+    offset: 7
     fav: true
 
   - id: java
@@ -53,6 +53,8 @@
   - id: apache
 
   - id: nginx
+
+  - id: webpack
 
   - id: linux
 

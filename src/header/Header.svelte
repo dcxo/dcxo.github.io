@@ -19,7 +19,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content 1fr;
         /* align-content: center; */
-        padding: 64px;
+        padding: 48px;
         font-size: 1.2rem;
 
         @include desktop {

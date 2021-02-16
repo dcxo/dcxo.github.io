@@ -12,12 +12,13 @@
     <Projects />
 </main>
 
-<style global>
+<style lang="scss" global>
+
     :root {
-        --primary-color: #f7b42c;
-        --secondary-color: #bc75fa;
-        --black-color: #262626;
-        --white-color: #d9d9d9;
+        --primary-color: #{$primaryColor};
+        --secondary-color: #{$secondaryColor};
+        --black-color: #{$black};
+        --white-color: #{$white};
     }
 
     * {
@@ -31,6 +32,7 @@
         font-size: 16px;
         font-family: "Inter", sans-serif;
         width: 100%;
+        color: var(--black-color);
     }
 
     body {

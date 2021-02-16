@@ -1,5 +1,5 @@
 <script>
-    import {tick} from "svelte";
+    import { tick } from "svelte";
 
     export let words = [];
     let currentWord = 0;
@@ -9,10 +9,7 @@
     async function updateTitle() {
         if (!isGrowing && currentWord != words.length - 1) {
             word = word.slice(0, -1);
-            if (
-                word === "" ||
-                word === words[currentWord + 1].slice(0, word.length)
-            ) {
+            if (word === "" || word === words[currentWord + 1].slice(0, word.length)) {
                 currentWord++;
                 isGrowing = true;
             }
@@ -23,8 +20,7 @@
             }
         }
 
-        if (currentWord != words.length)
-            tick().then((_) => setTimeout(updateTitle, 150));
+        if (currentWord != words.length) tick().then((_) => setTimeout(updateTitle, 150));
     }
 
     tick().then((_) => setTimeout(updateTitle, 800));

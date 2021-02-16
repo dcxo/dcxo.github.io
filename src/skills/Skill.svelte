@@ -5,16 +5,19 @@
     export let name = idToName(id);
     export let offset = 0;
     export let fav = false;
+    export let url = undefined;
+
+    let icon = fetch(`https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/${id}.svg`).then(res => res.text())//.then(text => text.replace(' icon', ''))
 </script>
 
-<div class={$$props.class} style="--offset: {offset}px">
-    <img
-        src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/{id}.svg"
-        alt={name}
-    />
+<div role="img" aria-label="{name}" class={$$props.class} style="--offset: {offset}px">
+    {#await icon then svg}
+        {@html svg}
+    {/await}
 
     {#if fav}
         <svg
+            class="fav"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             height="24"
@@ -44,7 +47,11 @@
             @include box_shadow(3);
         }
 
-        svg {
+        :global(svg) {
+            fill: var(--black-color);
+        }
+
+        svg.fav {
             position: absolute;
             top: 0;
             right: 8px;
