@@ -1,18 +1,15 @@
 <script>
-    import Skill from "./Skill.svelte";
-    import data from "./data.yml";
+    import Skill from "./Skill";
+    import data from "./data";
+import Title from "common/Title";
 </script>
 
 <section class="parent">
-    <header>
-        <h1>Skills</h1>
-    </header>
+    <Title heading>Skills</Title>
 
     {#each data as { skills, title }}
         <section>
-            <header>
-                <h1>{title}</h1>
-            </header>
+            <Title>{title}</Title>
             <ul>
                 {#each skills.sort(({ fav: x }, { fav: y }) =>
                     x === y ? 0 : x ? -1 : 1
@@ -34,15 +31,12 @@
 
         section {
             ul {
+                --cell-size: 80px from-md(90px) from-lg(110px);
                 display: grid;
                 list-style: none;
-                gap: 8px;
-                grid-template-columns: repeat(auto-fit, 80px);
-            }
-            header {
-                flex: 1 0 100%;
-                font-size: 1.25rem;
-                padding: 16px 0 8px 0;
+                gap: 8px from-lg(16px);
+                grid-template-columns: repeat(auto-fit, var(--cell-size));
+                justify-content: center from-md(start);
             }
         }
     }

@@ -1,17 +1,21 @@
 <script>
-    import projects from "./data.yml";
-    import Project from "./Project.svelte";
+    import Title from "common/Title";
+    import projects from "./data";
+    import Project from "./Project";
 </script>
 
 <section>
-    <header><h1>Projects</h1></header>
+    <Title heading>Projects</Title>
     <ul>
         {#each projects as project}
-            <li >
+            <li>
                 <Project class="project" {...project} />
             </li>
         {/each}
     </ul>
+    <footer>
+        More to come...
+    </footer>
 </section>
 
 <style lang="scss">
@@ -21,26 +25,24 @@
         padding: 24px;
         min-height: 100vh;
 
-        header {
-            margin: 0 0 12px 0;
-        }
-
         ul {
             list-style: none;
             display: grid;
             grid-auto-flow: row;
-            grid-auto-rows: 100px;
+            grid-auto-rows: 150px;
             gap: 16px;
             margin: 0 auto;
+            max-width: unset from-md(100%) from-lg(75vw);
+            grid-template-columns: unset from-md(1fr 1fr);
+            align-items: stretch;
+        }
 
-            @include tablet {
-                max-width: 100%;
-                grid-template-columns: 1fr 1fr;
-                align-items: stretch;
-            }
-            @include desktop {
-                max-width: 75vw;
-            }
+        footer {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 5rem;
+            opacity: 0.5;
         }
     }
 </style>

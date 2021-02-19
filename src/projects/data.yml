@@ -1,12 +1,14 @@
 - name: This portfolio
   url: https://github.com/dcxo/dcxo.github.io
   techs:
-    - svelte, Svelte
-    - sass, SASS
-    - javascript, Javascript
-    - rollup-dot-js, Rollup.JS
+    - svelte
+    - sass
+    - javascript
+    - webpack
+
 - name: Moolic
   url: https://github.com/dcxo/moolic
+  imgUrl: ../imgs/moolic.png
   desc: |
     An android music player
   techs:

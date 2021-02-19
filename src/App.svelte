@@ -1,12 +1,10 @@
 <script charset="utf-8">
-    import Header from "./header/Header.svelte";
-    import Projects from "./projects/Projects.svelte";
-    import Skills from "./skills/Skills.svelte";
+    import Header from "header/Header";
+    import Projects from "projects/Projects";
+    import Skills from "skills/Skills";
 </script>
 
 <svelte:head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <Header />
@@ -27,6 +25,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    noscript {
+        width: 75%;
+        background-color: #ff000033;
+        color: red;
+        margin: 16px auto;
+        padding: 16px;
+        border: 1px solid red;
     }
 
     html,

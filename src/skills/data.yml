@@ -1,62 +1,65 @@
 - title: Programming Languages
   skills:
 
-  - id: rust
-    fav: true
+    - fav: true
+      id: rust
+      url: https://www.rust-lang.org/
+      
+    - id: dart
 
-  - id: python
-    offset: -2
+    - fav: true
+      id: go
+      offset: 7
+      
+    - id: java
 
-  - id: go
-    offset: 7
-    fav: true
+    - id: javascript
 
-  - id: java
+    - id: kotlin
 
-  - id: php
-    name: PHP
-    offset: 4
+    - id: php
+      name: PHP
+      offset: 4
 
-  - id: typescript
+    - id: python
+      offset: -2
 
-  - id: kotlin
-
-  - id: dart
-
-  - id: javascript
+    - id: typescript
 
 - title: Frameworks and SDK
   skills:
 
-  - id: android
-    offset: 2
+    - id: android
+      offset: 2
 
-  - id: express
+    - id: django
 
-  - id: react
+    - id: express
+    
+    - id: flutter
 
-  - id: django
+    - id: react
 
-  - id: svelte
+    - id: svelte
 
-  - id: symphony
-
-  - id: flutter
+    - id: symphony
 
 - title: Other tools
   skills:
 
-  - id: git
+    - id: apache
 
-  - id: docker
+    - id: sass
 
-  - id: apache
+    - id: docker
 
-  - id: nginx
+    - id: git
 
-  - id: webpack
+    - id: githubactions
+      name: Github Actions
 
-  - id: linux
+    - id: linux
 
-  - id: githubactions
-    name: Github Actions
+    - id: nginx
+
+    - id: webpack
