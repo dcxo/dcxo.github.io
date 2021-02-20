@@ -9,7 +9,7 @@
     <QuickConnectCell id="github" href="https://github.com/dcxo" />
     <QuickConnectCell id="linkedin" href="https://linkedin.com/in/dcxo" />
     <QuickConnectCell id="twitter" href="https://twitter.com/imdcxo" />
-    <QuickConnectCell id="dev-dot-to" href="https://dev.to/dcxo" />
+    <QuickConnectCell id="telegram" href="https://t.me/imdcxo" />
     <QuickConnectCell id="post" href="https://blog.dcxo.dev" />
 </footer>
 
@@ -35,7 +35,7 @@
             margin: 8px;
 
             @include box_shadow(2);
-            &:hover {
+            &:hover, &:active, &:focus {
                 @include box_shadow(3);
             }
         }

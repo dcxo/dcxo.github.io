@@ -5,9 +5,6 @@
     import Footer from "footer/Footer";
 </script>
 
-<svelte:head>
-</svelte:head>
-
 <Header />
 <main>
     <Skills />

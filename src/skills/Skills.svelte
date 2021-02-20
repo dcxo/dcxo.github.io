@@ -28,7 +28,7 @@
         padding: 24px;
 
         section {
-            margin-bottom: 4px from-md(8px) from-lg(24px);
+            margin-bottom: 8px from-md(16px) from-lg(48px);
             ul {
                 --cell-size: 80px from-md(90px) from-lg(110px);
                 display: grid;

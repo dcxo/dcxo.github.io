@@ -14,3 +14,10 @@
   techs:
     - android
     - kotlin
+
+- name: html_gen
+  url: https://github.com/dcxo/html_gen
+  desc: |
+    A little tool to generate static html from components files
+  techs:
+    - rust

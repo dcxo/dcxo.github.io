@@ -101,7 +101,7 @@
             :global(svg) {
                 size: 1rem;
                 display: block;
-                fill: var(--white-color);
+                fill: currentColor;
                 margin: 8px;
             }
 
@@ -109,7 +109,7 @@
                 background-color: var(--secondary-color);
                 border: none;
                 border-radius: 4px;
-                color: var(--black-color);
+                color: var(--white-color);
                 transition: box-shadow 440ms ease-in-out;
 
                 @include box_shadow(2, $black);

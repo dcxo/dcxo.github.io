@@ -29,10 +29,10 @@
             list-style: none;
             display: grid;
             grid-auto-flow: row;
-            grid-auto-rows: 150px;
-            gap: 16px;
+            grid-auto-rows: 168px;
+            gap: 16px from-lg(24px);
             margin: 0 auto;
-            max-width: unset from-md(100%) from-lg(75vw);
+            max-width: unset md-lg(100%) from-lg(75vw);
             grid-template-columns: unset from-md(1fr 1fr);
             align-items: stretch;
         }
