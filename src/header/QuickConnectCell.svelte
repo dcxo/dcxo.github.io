@@ -7,7 +7,7 @@
     let icon = icons.filter(icon => icon.fileName.endsWith(`/${id}.svg`))[0].module
 </script>
 
-<a {href} class={$$props.class} title={name} target='_blank'>
+<a {href} class={$$props.class} title={name} target='_blank' rel='noopener'>
     {@html icon}
 </a>
 

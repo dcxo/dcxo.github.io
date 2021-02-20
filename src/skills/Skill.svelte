@@ -12,7 +12,7 @@
     let icon = icons.filter(i => i.fileName.endsWith(`/${id}.svg`))[0].module
 </script>
 
-<a {href} title={name} tabindex={0} target="_blank" style={`--offset: ${offset}px`}>
+<a {href} title={name} tabindex={0} target="_blank" style={`--offset: ${offset}px`} rel='noopener'>
     {@html icon}
 
     {#if fav}
