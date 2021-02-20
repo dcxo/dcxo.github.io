@@ -22,7 +22,9 @@
     <Title heading sub>
         {name}
     </Title>
-    <img src={img} alt="" aria-hidden="true" />
+    {#if img}
+        <img src={img} alt="" aria-hidden="true" />
+    {/if}
     <p>{desc}</p>
 
     <footer>
@@ -99,7 +101,7 @@
             :global(svg) {
                 size: 1rem;
                 display: block;
-                fill: var(--black-color);
+                fill: var(--white-color);
                 margin: 8px;
             }
 

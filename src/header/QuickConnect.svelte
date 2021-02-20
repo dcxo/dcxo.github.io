@@ -1,5 +1,5 @@
 <script>
-    import QuickConnectCell from "./QuickConnectCell";
+    import QuickConnectCell from "common/QuickConnectCell";
 </script>
 
 <div class={$$props.class}>
@@ -16,9 +16,6 @@
         grid-auto-rows: 64px from-lg(80px);
 
         :global(.qcc) {
-            background-color: var(--white-color);
-            border-radius: 50%;
-            padding: 16px;
 
             &:nth-child(1) {
                 grid-row: 1 from-lg(2);

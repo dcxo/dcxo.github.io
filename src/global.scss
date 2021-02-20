@@ -1,7 +1,7 @@
-$black: #232130;
+$black: #211c25;
 $white: invert($black);
 $primaryColor: #f7b42c;
-$secondaryColor: #bc75fa;
+$secondaryColor: #7616F5;
 
 @mixin box_shadow($level, $color: $black, $inset: "") {
     @if $level == 1 {

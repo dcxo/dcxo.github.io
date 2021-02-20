@@ -2,6 +2,7 @@
     import Header from "header/Header";
     import Projects from "projects/Projects";
     import Skills from "skills/Skills";
+    import Footer from "footer/Footer";
 </script>
 
 <svelte:head>
@@ -12,6 +13,7 @@
     <Skills />
     <Projects />
 </main>
+<Footer />
 
 <style lang="scss" global>
     :root {

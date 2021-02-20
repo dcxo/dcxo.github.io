@@ -1,7 +1,7 @@
 <script>
     import Skill from "./Skill";
     import data from "./data";
-import Title from "common/Title";
+    import Title from "common/Title";
 </script>
 
 <section class="parent">
@@ -11,9 +11,7 @@ import Title from "common/Title";
         <section>
             <Title>{title}</Title>
             <ul>
-                {#each skills.sort(({ fav: x }, { fav: y }) =>
-                    x === y ? 0 : x ? -1 : 1
-                ) as skill}
+                {#each skills.sort(({ fav: x }, { fav: y }) => (x === y ? 0 : x ? -1 : 1)) as skill}
                     <li class="skill">
                         <Skill {...skill} />
                     </li>
@@ -30,6 +28,7 @@ import Title from "common/Title";
         padding: 24px;
 
         section {
+            margin-bottom: 4px from-md(8px) from-lg(24px);
             ul {
                 --cell-size: 80px from-md(90px) from-lg(110px);
                 display: grid;
