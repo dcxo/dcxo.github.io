@@ -4,8 +4,8 @@
 
 <div class={$$props.class}>
     <QuickConnectCell class="qcc" id="gmail" name="Email" href="mailto:im@dcxo.dev" />
-    <QuickConnectCell class="qcc" href="https://github.com/dcxo" id="github" />
-    <QuickConnectCell class="qcc" href="https://linkedin.com/in/dcxo" id="linkedin" />
+    <QuickConnectCell class="qcc" href="https://github.com/dcxo" id="github" name="Github" />
+    <QuickConnectCell class="qcc" href="https://linkedin.com/in/dcxo" id="linkedin" name="LinkedIn" />
 </div>
 
 <style lang="scss">

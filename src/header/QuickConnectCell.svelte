@@ -2,11 +2,13 @@
     export let href;
     export let id;
     export let name = id;
-    import InlineSVG from "svelte-inline-svg";
+
+    import icons from '../icons/*.svg';
+    let icon = icons.filter(icon => icon.fileName.endsWith(`/${id}.svg`))[0].module
 </script>
 
 <a {href} class={$$props.class} title={name} target='_blank'>
-    <InlineSVG src={`https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/${id}.svg`} />
+    {@html icon}
 </a>
 
 <style lang="scss">

@@ -7,12 +7,12 @@
     export let name = idToName(id);
     export let offset = 0;
     export let fav = false;
-    export let url = undefined;
+    export let href = undefined;
 
     let icon = icons.filter(i => i.fileName.endsWith(`/${id}.svg`))[0].module
 </script>
 
-<a href={url} title={name} tabindex={0} target="_blank" style={`--offset: ${offset}px`}>
+<a {href} title={name} tabindex={0} target="_blank" style={`--offset: ${offset}px`}>
     {@html icon}
 
     {#if fav}

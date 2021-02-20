@@ -1,18 +1,13 @@
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { dirname, join } = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
-
-const mode = process.env.NODE_ENV || 'development';
-const prod = mode === 'production';
 
 module.exports = {
     entry: './src/main.js',
     resolve: {
-        // alias: {
-        //     svelte: dirname(require.resolve('svelte/package.json'))
-        // },
+        alias: {
+            svelte: dirname(require.resolve('svelte/package.json'))
+        },
         extensions: ['.mjs', '.js', '.svelte', '.yml', '.yaml'],
         mainFields: ['svelte', 'browser', 'module', 'main'],
         modules: ['node_modules', join(__dirname, 'src')]
@@ -40,7 +35,6 @@ module.exports = {
                     loader: 'svelte-loader',
                     options: {
                         emitCss: true,
-                        hotReload: !prod,
                         preprocess: require('svelte-preprocess')({
                             scss: {
                                 prependData: `@import 'src/global.scss';`
@@ -60,7 +54,6 @@ module.exports = {
             }
         ]
     },
-    mode,
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'bundle.css'
@@ -73,15 +66,4 @@ module.exports = {
         }),
         // !prod && new webpack.HotModuleReplacementPlugin()
     ],
-    optimization: {
-        minimize: prod,
-        minimizer: [
-            new TerserPlugin(),// new ClosurePlugin(),
-            new CssMinimizerPlugin(),
-        ],
-    },
-    devtool: prod ? false : 'source-map',
-    devServer: {
-        hot: true
-    }
 };

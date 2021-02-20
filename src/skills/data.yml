@@ -3,63 +3,86 @@
 
     - fav: true
       id: rust
-      url: https://www.rust-lang.org/
+      href: https://www.rust-lang.org/
       
     - id: dart
+      href: https://dart.dev/
 
     - fav: true
       id: go
       offset: 7
+      href: https://golang.org/
       
     - id: java
+      href: https://www.java.com/en/
 
     - id: javascript
+      href: https://www.javascript.com/
 
     - id: kotlin
+      href: https://kotlinlang.org/
 
     - id: php
       name: PHP
       offset: 4
+      href: https://www.php.net/
 
     - id: python
       offset: -2
+      href: https://www.python.org/
 
     - id: typescript
+      href: https://www.typescriptlang.org/
 
 - title: Frameworks and SDK
   skills:
 
     - id: android
       offset: 2
+      href: https://developer.android.com/
 
     - id: django
+      href: https://www.djangoproject.com/
 
     - id: express
+      href: https://expressjs.com/
     
     - id: flutter
+      href: https://flutter.dev/
 
     - id: react
+      href: https://reactjs.org/
 
     - id: svelte
+      href: https://svelte.dev/
 
-    - id: symphony
+    - id: symfony
+      href: https://symfony.com/
 
 - title: Other tools
   skills:
 
     - id: apache
+      href: http://httpd.apache.org/
 
     - id: sass
+      href: https://sass-lang.com/
 
     - id: docker
+      href: https://www.docker.com/
 
     - id: git
+      href: https://git-scm.com/
 
     - id: githubactions
       name: Github Actions
+      href: https://github.com/features/actions
 
     - id: linux
+      href: https://www.linux.org/
 
     - id: nginx
+      href: https://www.nginx.com/
 
     - id: webpack
+      href: https://webpack.js.org/
