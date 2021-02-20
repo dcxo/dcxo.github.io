@@ -12,6 +12,4 @@ const devConfig = {
     mode: 'development'
 };
 
-const config = merge(commonConfig, devConfig);
-console.dir(config);
-module.exports = config
+module.exports = merge(commonConfig, devConfig);

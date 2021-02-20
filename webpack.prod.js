@@ -22,6 +22,4 @@ const prodConf = {
     mode: 'production'
 };
 
-const config = merge(commonConfig, prodConf);
-console.dir(config);
-module.exports = config
+module.exports = merge(commonConfig, prodConf);
