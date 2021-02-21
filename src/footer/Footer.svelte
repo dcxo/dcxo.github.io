@@ -4,7 +4,7 @@
 </script>
 
 <footer>
-    <Title heading>Contact</Title>
+    <h2>Contact</h2>
     <QuickConnectCell id="gmail" href="mailto:im@dcxo.dev" />
     <QuickConnectCell id="github" href="https://github.com/dcxo" />
     <QuickConnectCell id="linkedin" href="https://linkedin.com/in/dcxo" />
@@ -22,10 +22,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        :global(header) {
+        h2 {
             flex: 1 0 100%;
             text-align: center;
-            font-size: 1.618rem;
+            font-size: 2.618rem;
+            margin-bottom: 16px;
         }
 
         :global(a) {
